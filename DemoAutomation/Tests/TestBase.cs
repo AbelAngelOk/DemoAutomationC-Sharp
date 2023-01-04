@@ -12,7 +12,7 @@ namespace DemoAutomation
         public IActor Nami = new Actor(name: "Nami");
         public string rutaDrivers = "C:/Users/Arbusta/Documents/Repositorios Git/QA automation/DemoAutomation-OrangeHRM/DemoAutomation/Drivers/";
 
-        [SetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
             var chrome = new ChromeDriver(rutaDrivers);

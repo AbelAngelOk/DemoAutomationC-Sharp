@@ -132,7 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Drivers\chromedriver.exe" />
-    <Content Include="Drivers\geckodriver.exe" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
