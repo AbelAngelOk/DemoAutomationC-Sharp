@@ -21,7 +21,7 @@ namespace DemoAutomation.Interactions
         }
 
         /// <summary>
-        /// <b>Proposito:</b> Dado un modelo intenta ingresar a la pagina.
+        /// <b>Proposito:</b> Dado un modelo de usuario intenta ingresar a la pagina.
         /// </summary>
         internal static ITask With(User modelo)
         {
