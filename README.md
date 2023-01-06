@@ -1,4 +1,4 @@
-# DemoAutomation-OrangeHRM
+# DemoAutomation in C#
 
 **Sobre el proyecto:** es una de mostracion de un proyecto de automatizacion de casos de prueba. Puede descargarse y correr los tests desde el "explorador de pruebas" o de forma individual sobre la cabecera del test.
 
