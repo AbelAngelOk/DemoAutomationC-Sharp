@@ -21,7 +21,7 @@ namespace DemoAutomation.Tests
             Nami.Can(CallRestApi.Using(new RestClient("https://www.mercadolibre.com.ar/menu/departments")));
         }
 
-        [Test]
+        [Test, Ignore("test en desarrollo, no se pudo implementar")]
         public void TestMLDepartmentsApiStatusCode()
         {
             /* response */

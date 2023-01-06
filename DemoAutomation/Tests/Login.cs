@@ -38,6 +38,14 @@ namespace DemoAutomation.Tests
         }
 
         [Test]
+        public void IntentionalFailure()
+        {
+            string FailUrlImg = "https://www.dfordog.co.uk/user/images/funnies/dog-fail-frisbee.jpg";
+            Nami.AttemptsTo(Navigate.ToUrl(FailUrlImg));
+            Assert.Fail();
+        }
+
+        [Test]
         public void InvalidPasswordLogin()
         {
             Nami.AttemptsTo(LogIn.With( User.StandardUserWithInvalidPassword() ));

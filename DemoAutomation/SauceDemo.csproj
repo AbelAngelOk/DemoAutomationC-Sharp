@@ -159,7 +159,8 @@
     <Compile Include="Interactions\IsInCart.cs" />
     <Compile Include="Interactions\LoginSimple.cs" />
     <Compile Include="Interactions\Login.cs" />
-    <Compile Include="Models\others.cs" />
+    <Compile Include="Interactions\ScreenCapture.cs" />
+    <Compile Include="Interactions\WaitForTheElementsToLoad.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Pages\CartPage.cs" />
     <Compile Include="Pages\InventoryPage.cs" />
@@ -172,6 +173,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Drivers\chromedriver.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="helpers\" />
+    <Folder Include="Screenshot\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

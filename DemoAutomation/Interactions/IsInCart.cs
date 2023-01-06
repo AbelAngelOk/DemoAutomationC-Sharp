@@ -29,12 +29,14 @@ namespace DemoAutomation.Interactions
         {
             cualquierActor.AttemptsTo(Click.On(InventoryPage.LogoShoppingCart));
 
-            return cualquierActor.AskingFor(
+            bool result = cualquierActor.AskingFor(
                 Appearance.Of(
-                    L("", 
-                       By.ClassName("//*[@class='cart_item'][" + NumberOfElement + "]"))
-                    )
+                    L("",By.ClassName("//*[@class='cart_item'][" + NumberOfElement + "]")))
                 );
+
+        //    if ( result == false ) cualquierActor.AttemptsTo(ScreenCapture.OfFail()) ;
+
+            return result;
         }
         #endregion
     }

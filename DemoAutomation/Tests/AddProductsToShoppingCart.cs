@@ -14,11 +14,7 @@ namespace DemoAutomation.Tests
         public void EmptyShoppingCart ()
         {
             Nami.AttemptsTo(Navigate.ToUrl(Url));
-            Nami.AttemptsTo(
-                Wait.Until(Appearance.Of(LoginPage.TxtUser), IsEqualTo.True()),
-                Wait.Until(Appearance.Of(LoginPage.TxtPassword), IsEqualTo.True()),
-                Wait.Until(Appearance.Of(LoginPage.BtnLogin), IsEqualTo.True())
-                );
+            Nami.AttemptsTo(WaitForTheElementsToLoad.OfLoginPage());
             Nami.AttemptsTo(LogIn.With( User.StandardUser() ));
             Nami.AttemptsTo(EmptyThatShoppingCart.IfItHaveAProduct() );
         }
@@ -35,8 +31,6 @@ namespace DemoAutomation.Tests
         {
             Nami.AttemptsTo(AddToShoppingCart.TwoProducts());
             Nami.AskingFor(IsInCart.TheProducts(2));
-
         }
-
     }
 }
